@@ -68,7 +68,7 @@ export function Content() {
     <>
       <Header
         title='Meu Manhwa'
-        subtitle='Não sabe qual manhwa, webtoon ou manga ler? Veja as sujestões da comunidade do Refugio Nerdolas'
+        subtitle='Não sabe qual manhwa, webtoon ou manga ler?'
         image={refugionerdolasImg}
         p='Siga o @refugionerdolas nas redes sociais'
       />
@@ -95,7 +95,7 @@ export function Content() {
         </div>
       </div>
       <div >
-        <h2 className={styles.projectsTitle}>Faça uma indicação de um manhwa:</h2>
+        <h2 className={styles.projectsTitle}>Faça uma indicação de outros manhwas:</h2>
         <form  className={styles.form} onSubmit={handleCreateMessage}>
           <input 
             onChange={handleInputValueObra} 
@@ -122,7 +122,7 @@ export function Content() {
             className={styles.formTextArea}
           />
           <button className={styles.formButton} type="submit">Indicar Obra</button>
-          {success && <p>Indicação feita com sucesso.</p>}
+          {success && <p>obrigada pela indicação e não esqueça de seguir o Refugio Nerdolas nas redes sociais</p>}
         </form>
       </div>
       <Footer />
